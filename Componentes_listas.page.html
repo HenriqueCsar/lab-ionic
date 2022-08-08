@@ -1,75 +1,121 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Meu app
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   
-  <h1>Botões</h1>
-  <ion-button>Padrão</ion-button>
-
-  <ion-button href="http://google.com.br">Link</ion-button>
+  <h1>Cartões</h1>
 
 
-  <h4>Cores</h4>
-  <ion-button color="primary">Primary</ion-button>
-  <ion-button color="secondary">secondary</ion-button>
-  <ion-button color="success">success</ion-button>
-  <ion-button color="warning">warning</ion-button>
-  <ion-button color="danger">danger</ion-button>
-  <ion-button color="light">light</ion-button>
-  <ion-button color="medium">medium</ion-button>
-  <ion-button color="dark">dark</ion-button>
+  <h4>Listas</h4>
+  <ion-list>
+    <ion-item>
+      <ion-label>1.Lorem ipsum dolor</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>2.Lorem ipsum dolor</ion-label>
+    </ion-item>
+  </ion-list>
 
 
-  <h4>Expandido </h4>
-  <!--Ocupa todo o espaço da tela-->
-  <ion-button expand="full">Full</ion-button>
-  <ion-button expand="block">Full</ion-button> <!---Arredondado-->
+  <h4>Listas Avatar</h4>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://source.unsplash.com/random/800x600"></ion-img>
+      </ion-avatar>
+      <ion-label>1.Henrique César</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://source.unsplash.com/random/800x600"></ion-img>
+      </ion-avatar>
+      <ion-label>2. Rodrigo Roges</ion-label>
+    </ion-item>
+  </ion-list>
 
 
-  <h4>Arredondado</h4>
-  <ion-button shape="round">Arredondado</ion-button>
+  <h4>Listas Slide</h4>
 
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Henrique</ion-label>
+      </ion-item>
+      <ion-item-options>
+        <ion-item-option color="warning">
+         <ion-icon slot="start" name="create"></ion-icon>
+          Alterar
+        </ion-item-option>
+        <ion-item-option color="danger">
+          <ion-icon slot="start" name="trash"></ion-icon>
+          Deletar
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 
-  <h4>Preenchimento</h4>
-  <ion-button fill="outline">Preenchimento</ion-button>
+  <h4>Fim slidr</h4>
 
+  <!--IOS-->
 
-  <h4>Realizando teste com mais de um atributo</h4>
-  <ion-button fill="outline" color="danger" expand="block">Teste</ion-button> 
+  <ion-card>
+    <ion-img src="https://source.unsplash.com/random/800x600">
 
-  <h4>Icones</h4>
-  <ion-button>
-    <ion-icon slot="start" name="star">
-    </ion-icon>
-    Icone
-  </ion-button>
+    </ion-img>
+    <ion-card-content mode="ios">
+      <ion-card-title>
+        Titulo Card
+      </ion-card-title>
+    </ion-card-content>
+  </ion-card>
+ 
+<!--Android-->
+  <ion-card>
+    <ion-img src="https://source.unsplash.com/random/800x600">
 
-  <ion-button>
-    <ion-icon slot="end" name="star">
-    </ion-icon>
-    Icone
-  </ion-button>
-
-  <ion-button>
-    <ion-icon slot="icon-only" name="star">
-    </ion-icon>
-  </ion-button>
+    </ion-img>
+    <ion-card-content mode="md">
+      <ion-card-title>
+        Titulo Card
+      </ion-card-title>
+    </ion-card-content>
+  </ion-card>
 
   
-  <ion-button>
-    <ion-icon slot="icon-only" name="arrow-back">
-    </ion-icon>
-  </ion-button>
+<!--IOS-->
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Titulo Card</ion-card-title>
+  </ion-card-header>
+  <ion-card-content mode="ios">
+    <ion-img src="https://source.unsplash.com/random/800x600">
 
-  <h4>Tamanhos</h4>
-  <ion-button size="large">Large</ion-button>
-  <ion-button> Default</ion-button>
-  <ion-button size="small">Small</ion-button>
+    </ion-img>
+    <ion-card-title>Teste</ion-card-title>
+    Ola tudo bem?
+
+  </ion-card-content>
+</ion-card>
+
+
+<!--Cartão com listagem de items-->
+<h4>Cartão com listagem de items</h4>
+<ion-card>
+  <ion-item href="https://www.google.com">
+    <ion-icon slot="start" name="add" mode="ios"></ion-icon>
+    <ion-label>1.Google</ion-label>
+  </ion-item>
+  <ion-item href="#">
+    <ion-icon slot="start" name="star"></ion-icon>
+    <ion-label>2.Estrela</ion-label>
+  </ion-item>
+</ion-card>
+
 
 </ion-content>
 
@@ -80,6 +126,6 @@
 
 <ion-footer> <ion-toolbar>
   <ion-title>
-    Menu
+    Footer
   </ion-title>
 </ion-toolbar></ion-footer>
